@@ -287,4 +287,3 @@ confirmStatusChangeBtn.addEventListener('click', async () => {
 
 /* ------------------ Init ------------------ */
 document.addEventListener('DOMContentLoaded', loadEvents);
-
