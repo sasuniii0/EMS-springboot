@@ -1,2 +1,2 @@
 ﻿# EMS-springboot
-![Event Management UI](assets/ss.png)
+
