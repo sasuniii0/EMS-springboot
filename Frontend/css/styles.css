@@ -30,3 +30,12 @@ form#eventForm label.required::after {
 .badge-status.CONFIRMED { background-color: #0d6efd; }
 .badge-status.CANCELLED { background-color: #dc3545; }
 .badge-status.COMPLETED { background-color: #198754; }
+
+.pagination .page-item .page-link {
+    color: #007bff;
+}
+.pagination .page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}

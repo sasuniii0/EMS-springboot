@@ -4,6 +4,10 @@ import lk.ijse.gdse.springboot_practice.dto.EventDTO;
 import lk.ijse.gdse.springboot_practice.entity.Event;
 import lk.ijse.gdse.springboot_practice.service.EventService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -38,4 +42,5 @@ public class EventController {
     public List<Event> searchEvent(@PathVariable String keyword) {
         return eventService.searchEvent(keyword);
     }
+
 }
