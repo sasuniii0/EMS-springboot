@@ -1,4 +1,6 @@
 const API_BASE = "http://localhost:8080/api/v1/event";
+let currentPage = 0;
+const size = 5;
 // Adjust if your backend runs elsewhere
 
 // Elements
@@ -286,5 +288,61 @@ confirmStatusChangeBtn.addEventListener('click', async () => {
     }
 });
 
+async function loadEventPage(page=0) {
+    try{
+        const res = await fetch(`${API_BASE}?page=${page}&size=${size}`);
+        if (!res.ok) throw new Error(`Failed to load page ${page}: ${res.status}`);
+        const data = await  res.json();
+        renderEvents(data.content);
+        createPagination(data.totalPages, data.number);
+    } catch (err) {
+        console.error(err);
+        showToast(err.message, 'danger');
+    }
+}
+
+function createPagination(totalPages, currentPage) {
+    const pagination = document.getElementById("pagination");
+    pagination.innerHTML = "";
+
+    // Previous Button
+    const prevLi = document.createElement('li');
+    prevLi.className = `page-item ${currentPage === 0 ? 'disabled' : ''}`;
+    prevLi.innerHTML = `<a class="page-link" href="#">Previous</a>`;
+    prevLi.onclick = (e) => {
+        e.preventDefault();
+        if (currentPage > 0) loadEventPage(currentPage - 1);
+    };
+    pagination.appendChild(prevLi);
+
+    // Page Numbers
+    for (let i = 0; i < totalPages; i++) {
+        const li = document.createElement('li');
+        li.className = `page-item ${i === currentPage ? 'active' : ''}`;
+        li.innerHTML = `<a class="page-link" href="#">${i + 1}</a>`;
+        li.onclick = (e) => {
+            e.preventDefault();
+            loadEventPage(i);
+        };
+        pagination.appendChild(li);
+    }
+
+    // Next Button
+    const nextLi = document.createElement('li');
+    nextLi.className = `page-item ${currentPage === totalPages - 1 ? 'disabled' : ''}`;
+    nextLi.innerHTML = `<a class="page-link" href="#">Next</a>`;
+    nextLi.onclick = (e) => {
+        e.preventDefault();
+        if (currentPage < totalPages - 1) loadEventPage(currentPage + 1);
+    };
+    pagination.appendChild(nextLi);
+}
+
 /* ------------------ Init ------------------ */
+/*
 document.addEventListener('DOMContentLoaded', loadEvents);
+*/
+document.addEventListener("DOMContentLoaded", () => {
+    loadEventPage(0);
+})
+

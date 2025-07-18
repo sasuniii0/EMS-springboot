@@ -19,13 +19,11 @@ body {
     font-size: .75rem;
 }
 
-/* show required fields */
 form#eventForm label.required::after {
     content: " *";
     color: var(--bs-danger);
 }
 
-/* optional custom status colors */
 .badge-status.PLANNED { background-color: #6c757d; }
 .badge-status.CONFIRMED { background-color: #0d6efd; }
 .badge-status.CANCELLED { background-color: #dc3545; }
@@ -38,4 +36,10 @@ form#eventForm label.required::after {
     background-color: #007bff;
     border-color: #007bff;
     color: #fff;
+}
+
+#pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }

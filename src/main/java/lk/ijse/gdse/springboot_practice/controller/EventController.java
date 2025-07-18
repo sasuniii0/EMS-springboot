@@ -42,5 +42,12 @@ public class EventController {
     public List<Event> searchEvent(@PathVariable String keyword) {
         return eventService.searchEvent(keyword);
     }
+    @GetMapping
+    public Page<Event> getAllEvents(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "5") int size
+    ){
+        return eventService.getEvents(page,size);
+    }
 
 }
