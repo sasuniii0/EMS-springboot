@@ -1,5 +1,6 @@
 package lk.ijse.gdse.springboot_practice.controller;
 
+import jakarta.validation.Valid;
 import lk.ijse.gdse.springboot_practice.dto.EventDTO;
 import lk.ijse.gdse.springboot_practice.entity.Event;
 import lk.ijse.gdse.springboot_practice.service.EventService;
@@ -25,7 +26,7 @@ public class EventController {
     // APIResponse is a custom response class to standardize the API responses
 
     @PostMapping("create")
-    public ResponseEntity<APIResponse> saveEvent(@RequestBody EventDTO eventDTO) {
+    public ResponseEntity<APIResponse> saveEvent(@Valid @RequestBody EventDTO eventDTO) {
         eventService.saveEvent(eventDTO);
         return ResponseEntity.ok(new APIResponse(200, "Success", "Event created successfully"));
     }
@@ -37,19 +38,19 @@ public class EventController {
     }
 
     @PutMapping("update")
-    public ResponseEntity<APIResponse> updateEvent(@RequestBody EventDTO eventDTO) {
+    public ResponseEntity<APIResponse> updateEvent(@Valid @RequestBody EventDTO eventDTO) {
         eventService.updateEvent(eventDTO);
         return ResponseEntity.ok(new APIResponse(200, "Success", "Event updated successfully"));
     }
 
     @PatchMapping("status/{id}")
-    public ResponseEntity<APIResponse> changeEventStatus(@PathVariable String id) {
+    public ResponseEntity<APIResponse> changeEventStatus(@Valid @PathVariable String id) {
         eventService.changeEventStatus(id);
         return ResponseEntity.ok(new APIResponse(200, "Success", "Event status changed successfully"));
     }
 
     @GetMapping("search/{keyword}")
-    public ResponseEntity<APIResponse> searchEvent(@PathVariable String keyword) {
+    public ResponseEntity<APIResponse> searchEvent(@Valid @PathVariable String keyword) {
         List<Event> events = eventService.searchEvent(keyword);
         return ResponseEntity.ok(new APIResponse(200, "Success", events));
     }
