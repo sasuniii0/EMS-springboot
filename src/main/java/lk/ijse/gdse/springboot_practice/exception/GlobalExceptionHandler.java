@@ -3,8 +3,12 @@ package lk.ijse.gdse.springboot_practice.exception;
 import lk.ijse.gdse.springboot_practice.util.APIResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+import java.util.HashMap;
+import java.util.Map;
 
 // Global exception handler for the application
 // This class can be used to handle exceptions globally across all controllers
@@ -42,5 +46,16 @@ public class GlobalExceptionHandler {
     public ResponseEntity<APIResponse> handleIllegalArgumentException(IllegalArgumentException e) {
         // This method handles IllegalArgumentException and returns a 400 Bad Request response
         return new ResponseEntity(new APIResponse(400, e.getMessage(), null), HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<APIResponse> handleMethodArgumentNotValidException(MethodArgumentNotValidException e) {
+        // This method handles validation errors and returns a 400 Bad Request response
+        // It collects the field errors and returns them in the response
+        Map<String, String> errors = new HashMap<>();
+        e.getBindingResult().getFieldErrors().forEach(error -> {
+            errors.put(error.getField(), error.getDefaultMessage());
+        });
+        return new ResponseEntity(new APIResponse(400, errors.toString(), null), HttpStatus.BAD_REQUEST);
     }
 }
