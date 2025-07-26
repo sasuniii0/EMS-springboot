@@ -18,4 +18,5 @@ public interface EventRepository extends JpaRepository<Event,Integer> {
     void changeEventStatus(String id);
 
     List<Event> findEventByEventNameContainingIgnoreCase(String keyword);
+
 }

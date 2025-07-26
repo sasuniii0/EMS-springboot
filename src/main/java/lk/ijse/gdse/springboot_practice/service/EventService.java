@@ -19,4 +19,5 @@ public interface EventService {
     List<Event> searchEvent(String keyword);
 
     Page<Event> getEvents(int page, int size);
+
 }
