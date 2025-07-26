@@ -55,12 +55,12 @@ public class EventController {
         return ResponseEntity.ok(new APIResponse(200, "Success", events));
     }
     @GetMapping
-    public ResponseEntity<APIResponse> getAllEvents(
+    public ResponseEntity<Page<Event>> getAllEvents(
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "5") int size
     ){
         Page<Event> pages = eventService.getEvents(page, size);
-        return ResponseEntity.ok(new APIResponse(200, "Success", pages));
+        return ResponseEntity.ok(pages);
     }
 
     // and also we can use new keyword to create APIResponse object
