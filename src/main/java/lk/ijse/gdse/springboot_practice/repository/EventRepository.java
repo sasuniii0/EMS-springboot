@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 
@@ -19,4 +20,5 @@ public interface EventRepository extends JpaRepository<Event,Integer> {
 
     List<Event> findEventByEventNameContainingIgnoreCase(String keyword);
 
+    boolean existsByEventBooked(LocalDateTime eventBooked);
 }

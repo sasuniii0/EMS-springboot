@@ -37,4 +37,10 @@ public class GlobalExceptionHandler {
         // This method handles ResourceAlreadyFoundException and returns a 409 Conflict response
         return new ResponseEntity(new APIResponse(409, e.getMessage(), null), HttpStatus.CONFLICT);
     }
+
+    @ExceptionHandler(IllegalArgumentException.class)
+    public ResponseEntity<APIResponse> handleIllegalArgumentException(IllegalArgumentException e) {
+        // This method handles IllegalArgumentException and returns a 400 Bad Request response
+        return new ResponseEntity(new APIResponse(400, e.getMessage(), null), HttpStatus.BAD_REQUEST);
+    }
 }
