@@ -27,15 +27,16 @@ public class AuthService {
         return  new AuthResponse(token);
     }
     public String register(UserDTO userDTO){
-        if (userRepository.findByUsername(userDTO.getUserName()).isPresent()){
+        if (userRepository.findByUsername(userDTO.getUsername()).isPresent()){
             throw new RuntimeException("User Already exists");
         }
         User user = User.builder()
-                .username(userDTO.getUserName())
+                .username(userDTO.getUsername())
                 .password(passwordEncoder.encode(userDTO.getPassword()))
                 .email(userDTO.getEmail())
                 .role(Role.valueOf(userDTO.getRole()))
                 .build();
+
         userRepository.save(user);
         return "User registered successfully";
     }

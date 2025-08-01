@@ -1,27 +1,26 @@
-2025-08-01T15:19:40.521+05:30  INFO 19252 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : Starting BnAuthApplication using Java 21.0.5 with PID 19252 (C:\Users\User\OneDrive\Documents\springboot-IJSE\Auth\BN-Auth\target\classes started by User in C:\Users\User\OneDrive\Documents\springboot-IJSE)
-2025-08-01T15:19:40.523+05:30  INFO 19252 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : No active profile set, falling back to 1 default profile: "default"
-2025-08-01T15:19:41.197+05:30  INFO 19252 --- [BN-Auth] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-01T15:19:41.215+05:30  INFO 19252 --- [BN-Auth] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
-2025-08-01T15:19:41.572+05:30  INFO 19252 --- [BN-Auth] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-08-01T15:19:41.584+05:30  INFO 19252 --- [BN-Auth] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-01T15:19:41.585+05:30  INFO 19252 --- [BN-Auth] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-01T15:19:41.632+05:30  INFO 19252 --- [BN-Auth] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-08-01T15:19:41.632+05:30  INFO 19252 --- [BN-Auth] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1061 ms
-2025-08-01T15:19:41.646+05:30  WARN 19252 --- [BN-Auth] [main] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 9984b2b4-249e-4fb9-bc16-6e185664be4c
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-08-01T15:19:41.774+05:30  INFO 19252 --- [BN-Auth] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-01T15:19:41.838+05:30  INFO 19252 --- [BN-Auth] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
-2025-08-01T15:19:41.872+05:30  INFO 19252 --- [BN-Auth] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-01T15:19:42.137+05:30  INFO 19252 --- [BN-Auth] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-01T15:19:42.164+05:30  INFO 19252 --- [BN-Auth] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-08-01T15:19:42.499+05:30  INFO 19252 --- [BN-Auth] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23396fc0
-2025-08-01T15:19:42.501+05:30  INFO 19252 --- [BN-Auth] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-08-01T15:19:42.546+05:30  WARN 19252 --- [BN-Auth] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-01T15:19:42.560+05:30  INFO 19252 --- [BN-Auth] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-08-02T00:29:08.439+05:30  INFO 14736 --- [BN-Auth] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02T00:29:08.457+05:30  INFO 14736 --- [BN-Auth] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-02T00:29:08.461+05:30  INFO 14736 --- [BN-Auth] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T00:29:08.463+05:30  INFO 14736 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-02T00:29:08.466+05:30  INFO 14736 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-02T00:29:12.646+05:30  INFO 8372 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : Starting BnAuthApplication using Java 21.0.5 with PID 8372 (C:\Users\User\OneDrive\Documents\springboot-IJSE\Auth\BN-Auth\target\classes started by User in C:\Users\User\OneDrive\Documents\springboot-IJSE)
+2025-08-02T00:29:12.648+05:30  INFO 8372 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T00:29:13.128+05:30  INFO 8372 --- [BN-Auth] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-02T00:29:13.159+05:30  INFO 8372 --- [BN-Auth] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
+2025-08-02T00:29:13.477+05:30  INFO 8372 --- [BN-Auth] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-02T00:29:13.485+05:30  INFO 8372 --- [BN-Auth] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-02T00:29:13.485+05:30  INFO 8372 --- [BN-Auth] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-02T00:29:13.514+05:30  INFO 8372 --- [BN-Auth] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-02T00:29:13.515+05:30  INFO 8372 --- [BN-Auth] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 839 ms
+2025-08-02T00:29:13.593+05:30  INFO 8372 --- [BN-Auth] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-02T00:29:13.621+05:30  INFO 8372 --- [BN-Auth] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-02T00:29:13.640+05:30  INFO 8372 --- [BN-Auth] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-02T00:29:13.814+05:30  INFO 8372 --- [BN-Auth] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-02T00:29:13.832+05:30  INFO 8372 --- [BN-Auth] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-02T00:29:14.023+05:30  INFO 8372 --- [BN-Auth] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49d543a9
+2025-08-02T00:29:14.024+05:30  INFO 8372 --- [BN-Auth] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-02T00:29:14.060+05:30  WARN 8372 --- [BN-Auth] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-02T00:29:14.070+05:30  INFO 8372 --- [BN-Auth] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.40
@@ -29,14 +28,290 @@ This generated password is for development use only. Your security configuration
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-08-01T15:19:43.275+05:30  INFO 19252 --- [BN-Auth] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-01T15:19:43.397+05:30  INFO 19252 --- [BN-Auth] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-01T15:19:43.425+05:30  WARN 19252 --- [BN-Auth] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-01T15:19:43.725+05:30  INFO 19252 --- [BN-Auth] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-01T15:19:43.848+05:30  INFO 19252 --- [BN-Auth] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-08-01T15:19:43.854+05:30  INFO 19252 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : Started BnAuthApplication in 3.682 seconds (process running for 5.313)
-2025-08-01T15:20:04.278+05:30  INFO 19252 --- [BN-Auth] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-01T15:20:04.285+05:30  INFO 19252 --- [BN-Auth] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-08-01T15:20:04.288+05:30  INFO 19252 --- [BN-Auth] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-01T15:20:04.290+05:30  INFO 19252 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-08-01T15:20:04.294+05:30  INFO 19252 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-02T00:29:14.587+05:30  INFO 8372 --- [BN-Auth] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-02T00:29:14.618+05:30  INFO 8372 --- [BN-Auth] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T00:29:14.872+05:30  WARN 8372 --- [BN-Auth] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-02T00:29:14.895+05:30  INFO 8372 --- [BN-Auth] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-08-02T00:29:15.234+05:30  INFO 8372 --- [BN-Auth] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-02T00:29:15.239+05:30  INFO 8372 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : Started BnAuthApplication in 2.923 seconds (process running for 3.355)
+2025-08-02T00:29:28.195+05:30  INFO 8372 --- [BN-Auth] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02T00:29:28.195+05:30  INFO 8372 --- [BN-Auth] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-02T00:29:28.198+05:30  INFO 8372 --- [BN-Auth] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-02T00:30:46.178+05:30  INFO 8372 --- [BN-Auth] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02T00:30:46.182+05:30  INFO 8372 --- [BN-Auth] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-02T00:30:46.186+05:30  INFO 8372 --- [BN-Auth] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T00:30:46.187+05:30  INFO 8372 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-02T00:30:46.193+05:30  INFO 8372 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-02T00:30:49.348+05:30  INFO 2156 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : Starting BnAuthApplication using Java 21.0.5 with PID 2156 (C:\Users\User\OneDrive\Documents\springboot-IJSE\Auth\BN-Auth\target\classes started by User in C:\Users\User\OneDrive\Documents\springboot-IJSE)
+2025-08-02T00:30:49.350+05:30  INFO 2156 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T00:30:49.965+05:30  INFO 2156 --- [BN-Auth] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-02T00:30:50.005+05:30  INFO 2156 --- [BN-Auth] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
+2025-08-02T00:30:50.341+05:30  INFO 2156 --- [BN-Auth] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-02T00:30:50.349+05:30  INFO 2156 --- [BN-Auth] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-02T00:30:50.350+05:30  INFO 2156 --- [BN-Auth] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-02T00:30:50.377+05:30  INFO 2156 --- [BN-Auth] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-02T00:30:50.377+05:30  INFO 2156 --- [BN-Auth] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 982 ms
+2025-08-02T00:30:50.466+05:30  INFO 2156 --- [BN-Auth] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-02T00:30:50.494+05:30  INFO 2156 --- [BN-Auth] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-02T00:30:50.513+05:30  INFO 2156 --- [BN-Auth] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-02T00:30:50.694+05:30  INFO 2156 --- [BN-Auth] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-02T00:30:50.713+05:30  INFO 2156 --- [BN-Auth] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-02T00:30:50.908+05:30  INFO 2156 --- [BN-Auth] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b28cff
+2025-08-02T00:30:50.911+05:30  INFO 2156 --- [BN-Auth] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-02T00:30:50.943+05:30  WARN 2156 --- [BN-Auth] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-02T00:30:50.953+05:30  INFO 2156 --- [BN-Auth] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-02T00:30:51.475+05:30  INFO 2156 --- [BN-Auth] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-02T00:30:51.506+05:30  INFO 2156 --- [BN-Auth] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T00:30:51.788+05:30  WARN 2156 --- [BN-Auth] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-02T00:30:51.813+05:30  INFO 2156 --- [BN-Auth] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-08-02T00:30:52.187+05:30  INFO 2156 --- [BN-Auth] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-02T00:30:52.193+05:30  INFO 2156 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : Started BnAuthApplication in 3.199 seconds (process running for 3.624)
+2025-08-02T00:31:03.931+05:30  INFO 2156 --- [BN-Auth] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02T00:31:03.932+05:30  INFO 2156 --- [BN-Auth] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-02T00:31:03.934+05:30  INFO 2156 --- [BN-Auth] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-02T00:31:52.135+05:30  INFO 2156 --- [BN-Auth] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02T00:31:52.141+05:30  INFO 2156 --- [BN-Auth] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-02T00:31:52.145+05:30  INFO 2156 --- [BN-Auth] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T00:31:52.146+05:30  INFO 2156 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-02T00:31:52.153+05:30  INFO 2156 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-02T00:31:55.095+05:30  INFO 4676 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : Starting BnAuthApplication using Java 21.0.5 with PID 4676 (C:\Users\User\OneDrive\Documents\springboot-IJSE\Auth\BN-Auth\target\classes started by User in C:\Users\User\OneDrive\Documents\springboot-IJSE)
+2025-08-02T00:31:55.097+05:30  INFO 4676 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T00:31:55.718+05:30  INFO 4676 --- [BN-Auth] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-02T00:31:55.773+05:30  INFO 4676 --- [BN-Auth] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+2025-08-02T00:31:56.289+05:30  INFO 4676 --- [BN-Auth] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-02T00:31:56.297+05:30  INFO 4676 --- [BN-Auth] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-02T00:31:56.298+05:30  INFO 4676 --- [BN-Auth] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-02T00:31:56.329+05:30  INFO 4676 --- [BN-Auth] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-02T00:31:56.329+05:30  INFO 4676 --- [BN-Auth] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1198 ms
+2025-08-02T00:31:56.413+05:30  INFO 4676 --- [BN-Auth] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-02T00:31:56.440+05:30  INFO 4676 --- [BN-Auth] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-02T00:31:56.460+05:30  INFO 4676 --- [BN-Auth] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-02T00:31:56.648+05:30  INFO 4676 --- [BN-Auth] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-02T00:31:56.669+05:30  INFO 4676 --- [BN-Auth] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-02T00:31:56.870+05:30  INFO 4676 --- [BN-Auth] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55b62db8
+2025-08-02T00:31:56.871+05:30  INFO 4676 --- [BN-Auth] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-02T00:31:56.902+05:30  WARN 4676 --- [BN-Auth] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-02T00:31:56.911+05:30  INFO 4676 --- [BN-Auth] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-02T00:31:57.445+05:30  INFO 4676 --- [BN-Auth] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-02T00:31:57.480+05:30  INFO 4676 --- [BN-Auth] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T00:31:57.754+05:30  WARN 4676 --- [BN-Auth] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-02T00:31:57.778+05:30  INFO 4676 --- [BN-Auth] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-08-02T00:31:58.133+05:30  INFO 4676 --- [BN-Auth] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-02T00:31:58.137+05:30  INFO 4676 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : Started BnAuthApplication in 3.403 seconds (process running for 3.805)
+2025-08-02T00:32:06.013+05:30  INFO 4676 --- [BN-Auth] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02T00:32:06.013+05:30  INFO 4676 --- [BN-Auth] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-02T00:32:06.015+05:30  INFO 4676 --- [BN-Auth] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-02T00:33:38.218+05:30  INFO 4676 --- [BN-Auth] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02T00:33:38.222+05:30  INFO 4676 --- [BN-Auth] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-02T00:33:38.225+05:30  INFO 4676 --- [BN-Auth] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T00:33:38.227+05:30  INFO 4676 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-02T00:33:38.232+05:30  INFO 4676 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-02T00:33:41.264+05:30  INFO 8128 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : Starting BnAuthApplication using Java 21.0.5 with PID 8128 (C:\Users\User\OneDrive\Documents\springboot-IJSE\Auth\BN-Auth\target\classes started by User in C:\Users\User\OneDrive\Documents\springboot-IJSE)
+2025-08-02T00:33:41.266+05:30  INFO 8128 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T00:33:41.771+05:30  INFO 8128 --- [BN-Auth] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-02T00:33:41.802+05:30  INFO 8128 --- [BN-Auth] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interface.
+2025-08-02T00:33:42.122+05:30  INFO 8128 --- [BN-Auth] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-02T00:33:42.130+05:30  INFO 8128 --- [BN-Auth] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-02T00:33:42.130+05:30  INFO 8128 --- [BN-Auth] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-02T00:33:42.157+05:30  INFO 8128 --- [BN-Auth] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-02T00:33:42.157+05:30  INFO 8128 --- [BN-Auth] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 859 ms
+2025-08-02T00:33:42.233+05:30  INFO 8128 --- [BN-Auth] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-02T00:33:42.261+05:30  INFO 8128 --- [BN-Auth] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-02T00:33:42.279+05:30  INFO 8128 --- [BN-Auth] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-02T00:33:42.468+05:30  INFO 8128 --- [BN-Auth] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-02T00:33:42.491+05:30  INFO 8128 --- [BN-Auth] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-02T00:33:42.695+05:30  INFO 8128 --- [BN-Auth] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6475e778
+2025-08-02T00:33:42.696+05:30  INFO 8128 --- [BN-Auth] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-02T00:33:42.730+05:30  WARN 8128 --- [BN-Auth] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-02T00:33:42.741+05:30  INFO 8128 --- [BN-Auth] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-02T00:33:43.242+05:30  INFO 8128 --- [BN-Auth] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-02T00:33:43.270+05:30  INFO 8128 --- [BN-Auth] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T00:33:43.522+05:30  WARN 8128 --- [BN-Auth] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-02T00:33:43.547+05:30  INFO 8128 --- [BN-Auth] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-08-02T00:33:43.883+05:30  INFO 8128 --- [BN-Auth] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-02T00:33:43.887+05:30  INFO 8128 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : Started BnAuthApplication in 2.99 seconds (process running for 3.485)
+2025-08-02T00:33:54.305+05:30  INFO 8128 --- [BN-Auth] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02T00:33:54.307+05:30  INFO 8128 --- [BN-Auth] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-02T00:33:54.308+05:30  INFO 8128 --- [BN-Auth] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-02T00:35:41.296+05:30  INFO 8128 --- [BN-Auth] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02T00:35:41.304+05:30  INFO 8128 --- [BN-Auth] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-02T00:35:41.307+05:30  INFO 8128 --- [BN-Auth] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T00:35:41.309+05:30  INFO 8128 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-02T00:35:41.319+05:30  INFO 8128 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-02T00:35:44.423+05:30  INFO 6120 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : Starting BnAuthApplication using Java 21.0.5 with PID 6120 (C:\Users\User\OneDrive\Documents\springboot-IJSE\Auth\BN-Auth\target\classes started by User in C:\Users\User\OneDrive\Documents\springboot-IJSE)
+2025-08-02T00:35:44.424+05:30  INFO 6120 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T00:35:44.884+05:30  INFO 6120 --- [BN-Auth] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-02T00:35:44.918+05:30  INFO 6120 --- [BN-Auth] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+2025-08-02T00:35:45.236+05:30  INFO 6120 --- [BN-Auth] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-02T00:35:45.246+05:30  INFO 6120 --- [BN-Auth] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-02T00:35:45.247+05:30  INFO 6120 --- [BN-Auth] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-02T00:35:45.277+05:30  INFO 6120 --- [BN-Auth] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-02T00:35:45.277+05:30  INFO 6120 --- [BN-Auth] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 824 ms
+2025-08-02T00:35:45.355+05:30  INFO 6120 --- [BN-Auth] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-02T00:35:45.382+05:30  INFO 6120 --- [BN-Auth] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-02T00:35:45.402+05:30  INFO 6120 --- [BN-Auth] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-02T00:35:45.601+05:30  INFO 6120 --- [BN-Auth] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-02T00:35:45.619+05:30  INFO 6120 --- [BN-Auth] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-02T00:35:45.868+05:30  INFO 6120 --- [BN-Auth] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49d543a9
+2025-08-02T00:35:45.871+05:30  INFO 6120 --- [BN-Auth] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-02T00:35:45.906+05:30  WARN 6120 --- [BN-Auth] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-02T00:35:45.915+05:30  INFO 6120 --- [BN-Auth] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-02T00:35:46.493+05:30  INFO 6120 --- [BN-Auth] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-02T00:35:46.528+05:30  INFO 6120 --- [BN-Auth] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T00:35:46.819+05:30  WARN 6120 --- [BN-Auth] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-02T00:35:46.843+05:30  INFO 6120 --- [BN-Auth] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-08-02T00:35:47.200+05:30  INFO 6120 --- [BN-Auth] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-02T00:35:47.204+05:30  INFO 6120 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : Started BnAuthApplication in 3.14 seconds (process running for 3.662)
+2025-08-02T00:35:52.707+05:30  INFO 6120 --- [BN-Auth] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02T00:35:52.709+05:30  INFO 6120 --- [BN-Auth] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-02T00:35:52.710+05:30  INFO 6120 --- [BN-Auth] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-02T00:36:47.776+05:30  INFO 6120 --- [BN-Auth] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02T00:36:47.788+05:30  INFO 6120 --- [BN-Auth] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-02T00:36:47.793+05:30  INFO 6120 --- [BN-Auth] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T00:36:47.795+05:30  INFO 6120 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-02T00:36:47.808+05:30  INFO 6120 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-02T00:36:50.825+05:30  INFO 18176 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : Starting BnAuthApplication using Java 21.0.5 with PID 18176 (C:\Users\User\OneDrive\Documents\springboot-IJSE\Auth\BN-Auth\target\classes started by User in C:\Users\User\OneDrive\Documents\springboot-IJSE)
+2025-08-02T00:36:50.827+05:30  INFO 18176 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T00:36:51.338+05:30  INFO 18176 --- [BN-Auth] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-02T00:36:51.372+05:30  INFO 18176 --- [BN-Auth] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interface.
+2025-08-02T00:36:51.707+05:30  INFO 18176 --- [BN-Auth] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-02T00:36:51.715+05:30  INFO 18176 --- [BN-Auth] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-02T00:36:51.715+05:30  INFO 18176 --- [BN-Auth] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-02T00:36:51.742+05:30  INFO 18176 --- [BN-Auth] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-02T00:36:51.742+05:30  INFO 18176 --- [BN-Auth] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 874 ms
+2025-08-02T00:36:51.824+05:30  INFO 18176 --- [BN-Auth] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-02T00:36:51.851+05:30  INFO 18176 --- [BN-Auth] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-02T00:36:51.870+05:30  INFO 18176 --- [BN-Auth] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-02T00:36:52.062+05:30  INFO 18176 --- [BN-Auth] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-02T00:36:52.081+05:30  INFO 18176 --- [BN-Auth] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-02T00:36:52.275+05:30  INFO 18176 --- [BN-Auth] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ecb9e17
+2025-08-02T00:36:52.277+05:30  INFO 18176 --- [BN-Auth] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-02T00:36:52.306+05:30  WARN 18176 --- [BN-Auth] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-02T00:36:52.317+05:30  INFO 18176 --- [BN-Auth] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-02T00:36:52.842+05:30  INFO 18176 --- [BN-Auth] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-02T00:36:52.873+05:30  INFO 18176 --- [BN-Auth] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T00:36:53.142+05:30  WARN 18176 --- [BN-Auth] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-02T00:36:53.165+05:30  INFO 18176 --- [BN-Auth] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-08-02T00:36:53.499+05:30  INFO 18176 --- [BN-Auth] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-02T00:36:53.505+05:30  INFO 18176 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : Started BnAuthApplication in 3.016 seconds (process running for 3.447)
+2025-08-02T00:37:04.285+05:30  INFO 18176 --- [BN-Auth] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02T00:37:04.286+05:30  INFO 18176 --- [BN-Auth] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-02T00:37:04.287+05:30  INFO 18176 --- [BN-Auth] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-02T00:39:09.135+05:30  INFO 18176 --- [BN-Auth] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02T00:39:09.142+05:30  INFO 18176 --- [BN-Auth] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-02T00:39:09.146+05:30  INFO 18176 --- [BN-Auth] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T00:39:09.148+05:30  INFO 18176 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-02T00:39:09.154+05:30  INFO 18176 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-02T00:39:13.065+05:30  INFO 22536 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : Starting BnAuthApplication using Java 21.0.5 with PID 22536 (C:\Users\User\OneDrive\Documents\springboot-IJSE\Auth\BN-Auth\target\classes started by User in C:\Users\User\OneDrive\Documents\springboot-IJSE)
+2025-08-02T00:39:13.066+05:30  INFO 22536 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T00:39:13.540+05:30  INFO 22536 --- [BN-Auth] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-02T00:39:13.571+05:30  INFO 22536 --- [BN-Auth] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
+2025-08-02T00:39:13.912+05:30  INFO 22536 --- [BN-Auth] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-02T00:39:13.920+05:30  INFO 22536 --- [BN-Auth] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-02T00:39:13.920+05:30  INFO 22536 --- [BN-Auth] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-02T00:39:13.946+05:30  INFO 22536 --- [BN-Auth] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-02T00:39:13.946+05:30  INFO 22536 --- [BN-Auth] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 845 ms
+2025-08-02T00:39:14.024+05:30  INFO 22536 --- [BN-Auth] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-02T00:39:14.053+05:30  INFO 22536 --- [BN-Auth] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-02T00:39:14.072+05:30  INFO 22536 --- [BN-Auth] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-02T00:39:14.249+05:30  INFO 22536 --- [BN-Auth] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-02T00:39:14.267+05:30  INFO 22536 --- [BN-Auth] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-02T00:39:14.457+05:30  INFO 22536 --- [BN-Auth] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21c34bf8
+2025-08-02T00:39:14.458+05:30  INFO 22536 --- [BN-Auth] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-02T00:39:14.491+05:30  WARN 22536 --- [BN-Auth] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-02T00:39:14.504+05:30  INFO 22536 --- [BN-Auth] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-02T00:39:15.017+05:30  INFO 22536 --- [BN-Auth] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-02T00:39:15.049+05:30  INFO 22536 --- [BN-Auth] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T00:39:15.302+05:30  WARN 22536 --- [BN-Auth] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-02T00:39:15.327+05:30  INFO 22536 --- [BN-Auth] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-08-02T00:39:15.676+05:30  INFO 22536 --- [BN-Auth] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-02T00:39:15.680+05:30  INFO 22536 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : Started BnAuthApplication in 2.942 seconds (process running for 3.432)
+2025-08-02T00:39:24.723+05:30  INFO 22536 --- [BN-Auth] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02T00:39:24.723+05:30  INFO 22536 --- [BN-Auth] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-02T00:39:24.726+05:30  INFO 22536 --- [BN-Auth] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-02T00:42:46.722+05:30  INFO 22536 --- [BN-Auth] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02T00:42:46.726+05:30  INFO 22536 --- [BN-Auth] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-02T00:42:46.729+05:30  INFO 22536 --- [BN-Auth] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T00:42:46.730+05:30  INFO 22536 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-02T00:42:46.736+05:30  INFO 22536 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-02T00:43:00.082+05:30  INFO 19252 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : Starting BnAuthApplication using Java 21.0.5 with PID 19252 (C:\Users\User\OneDrive\Documents\springboot-IJSE\Auth\BN-Auth\target\classes started by User in C:\Users\User\OneDrive\Documents\springboot-IJSE)
+2025-08-02T00:43:00.084+05:30  INFO 19252 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-08-02T00:43:00.585+05:30  INFO 19252 --- [BN-Auth] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-02T00:43:00.617+05:30  INFO 19252 --- [BN-Auth] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
+2025-08-02T00:43:00.930+05:30  INFO 19252 --- [BN-Auth] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-02T00:43:00.938+05:30  INFO 19252 --- [BN-Auth] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-02T00:43:00.938+05:30  INFO 19252 --- [BN-Auth] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-02T00:43:00.965+05:30  INFO 19252 --- [BN-Auth] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-02T00:43:00.965+05:30  INFO 19252 --- [BN-Auth] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 848 ms
+2025-08-02T00:43:01.057+05:30  INFO 19252 --- [BN-Auth] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-02T00:43:01.087+05:30  INFO 19252 --- [BN-Auth] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-02T00:43:01.106+05:30  INFO 19252 --- [BN-Auth] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-02T00:43:01.294+05:30  INFO 19252 --- [BN-Auth] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-02T00:43:01.311+05:30  INFO 19252 --- [BN-Auth] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-02T00:43:01.499+05:30  INFO 19252 --- [BN-Auth] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49d543a9
+2025-08-02T00:43:01.500+05:30  INFO 19252 --- [BN-Auth] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-02T00:43:01.536+05:30  WARN 19252 --- [BN-Auth] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-02T00:43:01.546+05:30  INFO 19252 --- [BN-Auth] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-02T00:43:02.078+05:30  INFO 19252 --- [BN-Auth] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-02T00:43:02.109+05:30  INFO 19252 --- [BN-Auth] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T00:43:02.379+05:30  WARN 19252 --- [BN-Auth] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-02T00:43:02.404+05:30  INFO 19252 --- [BN-Auth] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-08-02T00:43:02.752+05:30  INFO 19252 --- [BN-Auth] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-02T00:43:02.757+05:30  INFO 19252 --- [BN-Auth] [main] lk.ijse.gdse.bnauth.BnAuthApplication    : Started BnAuthApplication in 3.035 seconds (process running for 3.593)
+2025-08-02T00:43:11.702+05:30  INFO 19252 --- [BN-Auth] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-02T00:43:11.702+05:30  INFO 19252 --- [BN-Auth] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-02T00:43:11.704+05:30  INFO 19252 --- [BN-Auth] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-02T00:46:56.635+05:30  INFO 19252 --- [BN-Auth] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02T00:46:56.639+05:30  INFO 19252 --- [BN-Auth] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-02T00:46:56.641+05:30  INFO 19252 --- [BN-Auth] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T00:46:56.641+05:30  INFO 19252 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-02T00:46:56.647+05:30  INFO 19252 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
