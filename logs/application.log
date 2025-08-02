@@ -545,3 +545,11 @@
 2025-08-02T20:54:28.341+05:30  INFO 2996 --- [BN-Auth] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-08-02T20:54:28.341+05:30  INFO 2996 --- [BN-Auth] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-08-02T20:54:28.349+05:30  INFO 2996 --- [BN-Auth] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2025-08-02T21:22:01.534+05:30  WARN 2996 --- [BN-Auth] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m45s565ms878µs800ns).
+2025-08-02T21:34:04.041+05:30  WARN 2996 --- [BN-Auth] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m2s507ms551µs400ns).
+2025-08-02T22:34:48.047+05:30  WARN 2996 --- [BN-Auth] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=42m13s719ms92µs400ns).
+2025-08-02T22:35:40.483+05:30  INFO 2996 --- [BN-Auth] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-02T22:35:40.489+05:30  INFO 2996 --- [BN-Auth] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-02T22:35:40.496+05:30  INFO 2996 --- [BN-Auth] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-02T22:35:40.535+05:30  INFO 2996 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-02T22:35:40.544+05:30  INFO 2996 --- [BN-Auth] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
