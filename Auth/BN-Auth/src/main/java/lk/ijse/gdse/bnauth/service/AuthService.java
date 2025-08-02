@@ -31,10 +31,11 @@ public class AuthService {
             throw new RuntimeException("User Already exists");
         }
         User user = User.builder()
+                .name(userDTO.getName())
                 .username(userDTO.getUsername())
                 .password(passwordEncoder.encode(userDTO.getPassword()))
                 .email(userDTO.getEmail())
-                .role(Role.valueOf(userDTO.getRole()))
+                .role(Role.USER)
                 .build();
 
         userRepository.save(user);

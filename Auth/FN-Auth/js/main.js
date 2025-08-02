@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
 
             const userDTO = {
+                name : document.getElementById('name').value.trim(),
                 username: document.getElementById('username').value.trim(),
                 email: document.getElementById('email').value.trim(),
                 password: document.getElementById('password').value.trim()
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 const result = await response.json();
-                console.log('Sign Up response:', result); // ✅ For debugging
+                console.log('Sign Up response:', result);
 
                 if (response.ok) {
                     alert('Sign Up successful! You can now sign in.');

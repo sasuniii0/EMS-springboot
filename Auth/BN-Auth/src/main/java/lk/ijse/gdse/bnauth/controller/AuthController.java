@@ -18,7 +18,6 @@ public class AuthController {
 
     @PostMapping("/signup")
     public ResponseEntity<APIResponse> registerUser(@RequestBody UserDTO userDTO) {
-        System.out.println("Received registration request: " + userDTO.getUsername() + " / " + userDTO.getEmail());
         return ResponseEntity.ok(new APIResponse(
                 200,
                 "User registered successfully",
