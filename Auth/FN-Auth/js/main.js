@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 email: document.getElementById('email').value.trim(),
                 password: document.getElementById('password').value.trim()
             };
-            console.log(userDTO)
 
             try {
                 const response = await fetch(`${BASE_URL}/signup`, {
@@ -30,14 +29,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log('Sign Up response:', result);
 
                 if (response.ok) {
-                    alert('Sign Up successful! You can now sign in.');
+                    await Swal.fire({
+                        icon: 'success',
+                        title: 'Sign Up Successful!',
+                        text: 'You can now sign in.',
+                        confirmButtonColor: '#3085d6'
+                    });
                     window.location.href = 'index.html';
                 } else {
-                    alert(`Sign Up failed: ${result.message || 'Unknown error'}`);
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Sign Up Failed',
+                        text: result.message || 'Unknown error',
+                        confirmButtonColor: '#d33'
+                    });
                 }
             } catch (err) {
                 console.error(err);
-                alert('Error during sign up.');
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops!',
+                    text: 'Error during sign up.',
+                    confirmButtonColor: '#d33'
+                });
             }
         });
     }
@@ -63,20 +77,35 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 const result = await response.json();
-                console.log('Login response:', result); // ✅ For debugging
+                console.log('Login response:', result);
 
                 const token = result.data;
 
                 if (token) {
                     localStorage.setItem('jwtToken', token);
-                    alert('Sign In successful!');
+                    await Swal.fire({
+                        icon: 'success',
+                        title: 'Sign In Successful!',
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
                     window.location.href = 'dashboard.html';
                 } else {
-                    alert('Authentication failed: Token not found.');
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Authentication Failed',
+                        text: 'Token not found.',
+                        confirmButtonColor: '#d33'
+                    });
                 }
             } catch (err) {
                 console.error(err);
-                alert('Error during sign in.');
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops!',
+                    text: 'Error during sign in.',
+                    confirmButtonColor: '#d33'
+                });
             }
         });
     }
