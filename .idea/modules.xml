@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Auth/BN-Auth/BN-Auth.iml" filepath="$PROJECT_DIR$/Auth/BN-Auth/BN-Auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/springboot-IJSE.iml" filepath="$PROJECT_DIR$/.idea/springboot-IJSE.iml" />
     </modules>
   </component>
