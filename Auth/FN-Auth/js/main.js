@@ -134,9 +134,15 @@ document.addEventListener('DOMContentLoaded', () => {
         )
 
         if (!role || !token){
-            alert("you are not authorized to view this page. Please log in.");
-            sessionStorage.clear();
-            window.location.href = 'index.html';
+            Swal.fire({
+                icon: 'warning',
+                title: 'Unauthorized',
+                text: 'You are not authorized to view this page. Please log in.',
+                confirmButtonColor: '#3085d6'
+            }).then(() => {
+                sessionStorage.clear();
+                window.location.href = 'index.html';
+            });
             return;
         }
         document.getElementById('user-name').innerText = role;
