@@ -23,8 +23,15 @@ public class AuthService {
         if (!passwordEncoder.matches(authDTO.getPassword(),user.getPassword())){
             throw new RuntimeException("Invalid Credentials");
         }
+        System.out.println(user);
         String token = jwtUtil.generateToken(authDTO.getUsername());
-        return  new AuthResponse(token);
+        String username = user.getUsername();
+        String role = user.getRole().name();
+        // Assuming the role is stored as an enum in the User entity
+        System.out.println("Username: " + username);
+        System.out.println("Role: " + role);
+
+        return  new AuthResponse(token,username,role);
     }
     public String register(UserDTO userDTO){
         if (userRepository.findByUsername(userDTO.getUsername()).isPresent()){

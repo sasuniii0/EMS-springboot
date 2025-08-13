@@ -79,22 +79,35 @@ document.addEventListener('DOMContentLoaded', () => {
                 const result = await response.json();
                 console.log('Login response:', result);
 
-                const token = result.data;
+                const data = result.data;
+                const token = result.accessToken;
+                const username = data.username;
+                const role = result.role;
 
-                if (token) {
-                    localStorage.setItem('jwtToken', token);
-                    await Swal.fire({
+                console.log("Token:", token);
+                console.log("Role:", role);
+                console.log("Username:", username);
+
+                sessionStorage.setItem('jwtToken', token);
+                sessionStorage.setItem('userRole', role);
+
+                if (data && data.username && data.role){
+                    document.cookie = `jwtToken=${data.accessToken}; path=/; max-age=3600`;
+                    sessionStorage.setItem('userRole', data.role);
+                    window.location.href = "dashboard.html";
+                    Swal.fire({
                         icon: 'success',
                         title: 'Sign In Successful!',
-                        showConfirmButton: false,
-                        timer: 1500
+                        text: 'Welcome back!',
+                        confirmButtonColor: '#3085d6'
+                    }).then(() => {
+                        window.location.href = 'dashboard.html';
                     });
-                    window.location.href = 'dashboard.html';
                 } else {
                     Swal.fire({
                         icon: 'error',
                         title: 'Authentication Failed',
-                        text: 'Token not found.',
+                        text: 'Token or role not found',
                         confirmButtonColor: '#d33'
                     });
                 }
@@ -108,5 +121,51 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         });
+    }
+
+    if (path.includes('dashboard.html') || path.endsWith('/')) {
+        const role = sessionStorage.getItem('userRole');
+        console.log('Role from sessionStorage:', role);
+        const jwt = document.cookie.split('; ').find(row => row.startsWith('jwtToken='));
+        const token = jwt ? jwt.split('=')[1] : null;
+
+        console.log(
+            'Dashboard loaded with role:', role, 'and token:', token
+        )
+
+        if (!role || !token){
+            alert("you are not authorized to view this page. Please log in.");
+            sessionStorage.clear();
+            window.location.href = 'index.html';
+            return;
+        }
+        document.getElementById('user-name').innerText = role;
+
+        let endpoint = '';
+        if (role === 'ADMIN' || role === 'admin') {
+            endpoint = 'http://localhost:8080/hello/admin';
+        }else if (role === 'USER' || role === 'user') {
+            endpoint = 'http://localhost:8080/hello/user';
+        } else {
+            alert('Invalid role. Logging out.');
+            sessionStorage.clear();
+            window.location.href = 'index.html';
+            return;
+        }
+
+        fetch(endpoint,{
+            method: 'GET',
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
+        }).then(res=>{
+            if (!res.ok) throw new Error('Access denied');
+            return res.text();
+        }).catch(err=>{
+            console.error(err);
+            alert('Error fetching dashboard info. Logging out.');
+            sessionStorage.clear();
+            window.location.href = 'index.html';
+        })
     }
 });
