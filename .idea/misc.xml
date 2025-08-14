@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/Auth/BN-Auth/pom.xml" />
         <option value="$PROJECT_DIR$/Springboot_Practice/pom.xml" />
+        <option value="$PROJECT_DIR$/demoAuthGoogle/pom.xml" />
       </list>
     </option>
   </component>
