@@ -50,6 +50,14 @@
         .link:hover {
             text-decoration: underline;
         }
+
+        #google-auth-btn:hover {
+            background-color: #f8f9fa;
+        }
+        #space{
+            height: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -73,6 +81,11 @@
             <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
         </div>
         <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+        <div id="space"></div>
+        <a href="http://localhost:8080/oauth2/authorization/google" type="button" class="btn btn-light border w-100 d-flex align-items-center justify-content-center" id="google-auth-btn">
+            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo" width="20" class="me-2">
+            Sign Up with Google
+        </a>
     </form>
     <p class="mt-3 text-center">Already have an account? <a href="index.html" class="link">Sign In</a></p>
 </div>
